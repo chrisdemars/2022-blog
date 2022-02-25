@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
-  // Set custom directories for input, output, includes, and data
+  eleventyConfig.addPassthroughCopy({ 'sass/*.scss': 'css' });
+
   return {
+    // When a passthrough file is modified, rebuild the pages:
+    passthroughFileCopy: true,
     dir: {
       input: 'src',
       includes: '_includes',
