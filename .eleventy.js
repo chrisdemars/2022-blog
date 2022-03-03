@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ 'sass/*.scss': 'css' });
+  eleventyConfig.addPassthroughCopy({ 'sass/styles.scss': 'css' });
 
   return {
     // When a passthrough file is modified, rebuild the pages:

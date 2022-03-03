@@ -4,14 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
+  <a rel="stylesheet" href="/css/styles.css">
   <!-- Grab title from the page data and dump it here -->
   <title>Welcome to my blog</title>
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a>
-  </nav>
+  <div class="header">
+    <header class="header-wrapper">
+      <h1 class="logo">
+        Chris<span class="green-accent">DeMars</span>
+      </h1>
+      <nav>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <!-- Grab the content from the page data and dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
   <h1>Welcome</h1>
